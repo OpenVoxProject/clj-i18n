@@ -9,7 +9,7 @@
                  [cpath-clj "0.1.2"]
                  [org.gnu.gettext/libintl "0.18.3"]]
 
-  :profiles {:dev {:dependencies [[org.openvoxproject/kitchensink "3.4.2-SNAPSHOT"
+  :profiles {:dev {:dependencies [[org.openvoxproject/kitchensink "3.4.2"
                                    :exclusions [org.clojure/clojure]]]
                    :plugins [[jonase/eastwood "0.8.1"
                               :exclusions [org.clojure/clojure]]]}}
