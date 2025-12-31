@@ -130,9 +130,9 @@ On Red Hat-based operating systems, including Fedora, install gettext via
 
 ### Project setup
 
-[![Clojars Project](https://img.shields.io/clojars/v/puppetlabs/i18n.svg)](https://clojars.org/puppetlabs/i18n)
+[![Clojars Project](https://img.shields.io/clojars/v/org.openvoxproject/i18n.svg)](https://clojars.org/org.openvoxproject/i18n)
 
-1. In your `project.clj`, add `[puppetlabs/i18n "0.9.0"]` to your project's
+1. In your `project.clj`, add `[org.openvoxproject/i18n "0.9.0"]` to your project's
    :plugins and :dependencies vectors (without the version number in
    :dependencies if your project uses clj-parent). Also add
    ```
@@ -157,11 +157,6 @@ On Red Hat-based operating systems, including Fedora, install gettext via
    start with a prefix derived from the project name:** you'll need to list all
    of your namespaces/package name prefixes in the `PACKAGES` variable in the
    top level `Makefile` before the inclusion of the `dev-resources/Makefile.i18n`
-4. Add a job using [CI job configs' i18n-clj template][ci-job] to your project's
-   CI pipelines. This job will automatically update the POT file when
-   externalized strings are added or changed in the project.
-
-[ci-job]: https://github.com/puppetlabs/ci-job-configs/blob/master/resources/job-templates/i18n-clj.yaml
 
 This setup will ensure that compiling your project will also regenerate the Java
 `ResourceBundle` classes that your code needs to do translations.
@@ -269,7 +264,6 @@ The code is set up as an ordinary leiningen project, with the one exception
 that you need to run `make` before running `lein test` or `lein run`, as
 there are messages that need to be turned into a message bundle.
 
-# Maintenance
+## Support
 
-Maintainers: David Lutterkort <lutter@puppetlabs.com> and Libby Molina <libby@puppetlabs.com>
-Tickets: File bug tickets at https://tickets.puppetlabs.com/browse/INTL, and add the `clj` component to the ticket.
+GitHub issues and PRs are welcome! Additionally, drop us a line in [the Vox Pupuli Slack](https://voxpupuli.slack.com).
