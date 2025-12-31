@@ -11,7 +11,7 @@
 
   :profiles {:dev {:dependencies [[org.openvoxproject/kitchensink "3.4.3"
                                    :exclusions [org.clojure/clojure]]]
-                   :plugins [[jonase/eastwood "0.8.1"
+                   :plugins [[jonase/eastwood "1.4.3"
                               :exclusions [org.clojure/clojure]]]}}
 
   :deploy-repositories [["releases" {:url "https://clojars.org/repo"
