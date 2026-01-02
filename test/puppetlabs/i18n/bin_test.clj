@@ -3,9 +3,7 @@
             [clojure.string :as str]
             [clojure.test :refer :all]
             [clojure.java.shell :refer [sh]]
-            [puppetlabs.kitchensink.core :as ks])
-  (:import
-   (java.nio.file Path)))
+            [puppetlabs.kitchensink.core :as ks]))
 
 (defn git-head-sha
   []
@@ -23,7 +21,7 @@
     (io/copy (io/file resource) temp-file)
     temp-file))
 
-(defn- path [^Path f] (.getPath f))
+(defn- path [^java.io.File f] (.getPath f))
 
 (deftest add-gitref-test
   (testing "the src/leiningen/i18n/bin/add-gitref.sh script"

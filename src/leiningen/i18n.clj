@@ -32,7 +32,7 @@
   dev-resources or create dev-resources in the first :source-paths"
   [project]
   (or
-   (first (filter #(.endsWith % "dev-resources") (:resource-paths project)))
+   (first (filter #(.endsWith ^String % "dev-resources") (:resource-paths project)))
    (l/abort "You must have a dev-resources directory in your project's resource-paths")))
 
 (defn dev-resources-dir
