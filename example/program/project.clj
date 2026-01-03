@@ -4,7 +4,7 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.6.0"]
-                 [puppetlabs/i18n "0.1.0-SNAPSHOT"]]
-  :plugins      [[puppetlabs/i18n "0.1.0-SNAPSHOT"]]
+                 [puppetlabs/i18n "0.9.2"]]
+  :plugins      [[puppetlabs/i18n "0.9.2"]]
   :main puppetlabs.i18n-example-program.main
   :aot [puppetlabs.i18n-example-program.main])
