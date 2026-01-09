@@ -5,7 +5,7 @@
             :url "http://www.apache.org/licenses/LICENSE-2.0"}
 
   :pedantic? :abort
-  :dependencies [[org.clojure/clojure "1.11.2"]
+  :dependencies [[org.clojure/clojure "1.12.4"]
                  [cpath-clj "0.1.2"]
                  [org.gnu.gettext/libintl "0.18.3"]]
 
