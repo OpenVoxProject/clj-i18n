@@ -1,4 +1,4 @@
-(defproject org.openvoxproject/i18n "1.0.3"
+(defproject org.openvoxproject/i18n "1.0.4-SNAPSHOT"
   :description "Clojure i18n library"
   :url "http://github.com/openvoxproject/clj-i18n"
   :license {:name "Apache License, Version 2.0"
