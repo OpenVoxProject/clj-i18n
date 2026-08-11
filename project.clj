@@ -13,7 +13,7 @@
   :managed-dependencies [[org.clojure/clojure "1.12.5"]
                          [cpath-clj "0.1.2"]
                          [org.gnu.gettext/libintl "0.18.3"]
-                         [org.openvoxproject/kitchensink "3.5.7"]]
+                         [org.openvoxproject/kitchensink "3.5.8"]]
 
   :dependencies [[org.clojure/clojure]
                  [cpath-clj]
