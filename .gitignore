@@ -11,3 +11,7 @@ pom.xml.asc
 .hgignore
 .hg/
 /resources/locales.clj
+/.bundle
+/.vendor
+/vendor
+/Gemfile.lock
